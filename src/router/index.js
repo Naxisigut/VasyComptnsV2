@@ -3,13 +3,18 @@ import Router from "vue-router";
 Vue.use(Router);
 
 const routes = [
+  // {
+  //   path: "/",
+  //   name: "root",
+  //   redirect: "/index",
+  // },
   {
-    path: "/",
+    path: "/index",
     name: "index",
     component: () => import("@/layout"),
   },
   {
-    path: "/serchBox",
+    path: "/searchBox",
     name: "SearchBox",
     component: () => import("@/views/search-box"),
   },
