@@ -8,11 +8,11 @@ const routes = [
     name: "index",
     component: () => import("@/layout"),
   },
-  // {
-  //   path:'/serchBox',
-  //   name: 'SearchBox',
-  //   component:,
-  // }
+  {
+    path: "/serchBox",
+    name: "SearchBox",
+    component: () => import("@/views/search-box"),
+  },
 ];
 
 const router = new Router({
