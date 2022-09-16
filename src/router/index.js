@@ -2,22 +2,17 @@ import Vue from "vue";
 import Router from "vue-router";
 Vue.use(Router);
 
+import cpntRoutes from "./cpntRoutes";
 const routes = [
-  // {
-  //   path: "/",
-  //   name: "root",
-  //   redirect: "/index",
-  // },
+  {
+    path: "/",
+    redirect: "/index",
+  },
   {
     path: "/index",
-    name: "index",
-    component: () => import("@/layout"),
+    component: () => import("@/views/index"),
   },
-  {
-    path: "/searchBox",
-    name: "SearchBox",
-    component: () => import("@/views/search-box"),
-  },
+  ...cpntRoutes,
 ];
 
 const router = new Router({
