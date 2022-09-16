@@ -12,7 +12,11 @@ const routes = [
     path: "/index",
     component: () => import("@/views/index"),
   },
-  ...cpntRoutes,
+  {
+    path: "/cpnt",
+    component: () => import("@/layout"),
+    children: cpntRoutes,
+  },
 ];
 
 const router = new Router({

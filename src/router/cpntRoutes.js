@@ -1,6 +1,6 @@
 export default [
   {
-    path: "/searchBox",
+    path: "searchBox",
     name: "SearchBox",
     component: () => import("@/views/search-box"),
   },
